@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #1a0b3c 0%, #0a021f 100%);
+  color: white;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.App p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.portal {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(100, 150, 255, 0.6);
+  animation: float 6s ease-in-out infinite;
+  margin: 0 auto;
+  display: block;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(90deg,#6c63ff,#00b3ff);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .App h1 { font-size: 2rem; }
+  .App p { font-size: 1rem; }
+  button { font-size: 1rem; padding: 10px 25px; }
+}
+
+@media (max-width: 480px) {
+  .App h1 { font-size: 1.5rem; }
+  .App p { font-size: 0.9rem; margin-bottom: 30px; }
+  button { font-size: 0.9rem; padding: 8px 20px; }
+  body { padding: 30px 5px; }
+}
