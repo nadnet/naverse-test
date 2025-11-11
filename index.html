@@ -5,26 +5,63 @@
   <title>Naverse: Portal del Tiempo</title>
   <style>
     body {
-      background: #1a0b3c;
-      color: white;
-      font-family: sans-serif;
+      background: radial-gradient(circle at center, #1a0b3c 0%, #0a021f 100%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       padding-top: 50px;
+      margin: 0;
+      overflow-x: hidden;
     }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      opacity: 0.8;
+    }
+
     img {
       max-width: 90%;
       border-radius: 20px;
-      box-shadow: 0 0 30px rgba(100,100,255,0.5);
+      box-shadow: 0 0 40px rgba(100, 150, 255, 0.6);
+      animation: float 6s ease-in-out infinite;
     }
-    p {
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      opacity: 0.6;
+    }
+
+    audio {
       margin-top: 20px;
-      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido al Naverse</h1>
+  <h1>🌌 Bienvenido al Naverse</h1>
+  <p>Tu primera aventura digital comienza aquí: el Portal del Tiempo.</p>
+
+  <!-- Imagen del portal (reemplaza por tu archivo real) -->
   <img src="portal-tiempo.png" alt="Portal del Tiempo">
-  <p>Tu primera aventura digital comienza aquí.</p>
+
+  <!-- Música opcional (reemplaza el link si quieres otra) -->
+  <audio controls autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/10/audio_2a43a48bb3.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <footer>© 2025 Naverse — Creado por Nadia con IA 💫</footer>
 </body>
 </html>
